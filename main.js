@@ -61,6 +61,9 @@ inputSubmitElement.addEventListener('click', () => {
 
 //Отобразить Данные о погоде за 5 дней
 function displayWeather() {
+  //Удалить предыдущие данные
+  weatherElement.innerHTML = ''
+
   //Часовой пояс
   let cityElement = document.createElement('div')
   cityElement.innerHTML = `<p>${weather.timezone}</p>`
